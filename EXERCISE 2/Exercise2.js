@@ -38,8 +38,9 @@ console.log('The first white space appear in this place: ', space)
 
 //* f //*
 
-var sabato = 'it is always slightly sinister to return to the places that have witnessed a moment of perfection.'
-var f_world = sabato.indexOf('');
+var sabato = 'Un buen escritor expresa grandes cosas con pequeñas palabras; a la inversa del mal escritor, que dice cosas insignificantes con palabras grandiosas.'
+var f_world = 
+    sabato.substring(108, 109).toUpperCase() + sabato.substring(109,123) + " " + sabato.substring(137,138).toUpperCase() + sabato.substring(138,147);
 
-console.log('PAlabra con 10 caracteres', f_word)
+console.log('Palabra con 10 caracteres', f_world)
 
