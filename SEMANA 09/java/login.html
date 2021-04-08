@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= /> *// COMPLETAR*//
+    <link rel="stylesheet" href= />
+    <title>Login</title>
+</head>
+<body>
+    <div class="cont">
+        <form class="loginForm" name="form">
+            <div class="Title">
+                <h1 class="titlelog">
+                    LOGIN
+                </h1>
+            </div>
+            <div class="Email">
+                <label for="email"class="Elementslebel">
+                    Email
+                </label>
+                <input type="email" id="email" required/>                
+            </div>
+            <div class="Password">
+                <label for="password" class="Elementslebel">
+                    Password
+                </label>
+                <input type="password" id="password" required/>
+            </div>            
+            <div>
+                <button type="submit" class="buttomsub">
+                    Sign In
+                </button>
+                <button type="submit" class="btnSend" onclick="return validationLogin();">
+                    Sign In
+                </button>
+                <button type="reset"id="buttonrest" >
+                    Reset
+                </button>
+            </div>            
+            <div class="newaccount">
+                <a href="./register.html"> You don't have any account?</a>
+            </div>
+        </form>
+        <div id="validation-container"></div>
+    </div>    
+</body>
+</html>
