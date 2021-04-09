@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= /> *// COMPLETAR*//
-    <link rel="stylesheet" href= />
-    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>** Login **</title>
 </head>
 <body>
-    <div class="cont">
+    <div class="form">
         <form class="loginForm" name="form">
             <div class="Title">
                 <h1 class="titlelog">
@@ -20,30 +19,29 @@
                 <label for="email"class="Elementslebel">
                     Email
                 </label>
-                <input type="email" id="email" required/>                
+                <input type="email" id="email" placeholder=" Juan@mail.com" required/>                
             </div>
             <div class="Password">
-                <label for="password" class="Elementslebel">
+                <label for="password" id="password" class="Elementslebel">
                     Password
                 </label>
-                <input type="password" id="password" required/>
+                <input type="password" id="password" placeholder=" Please use more than 6 characters, number and uppercase"required/>
             </div>            
             <div>
-                <button type="submit" class="buttomsub">
+                <button type="submit" id="buttomsing" class="">
                     Sign In
                 </button>
-                <button type="submit" class="btnSend" onclick="return validationLogin();">
-                    Sign In
                 </button>
-                <button type="reset"id="buttonrest" >
+                <button type="reset"id="buttonreset" >
                     Reset
                 </button>
             </div>            
             <div class="newaccount">
-                <a href="./register.html"> You don't have any account?</a>
+                <a href="./register.html" id="anchor"> You don't have any account?</a>
             </div>
         </form>
-        <div id="validation-container"></div>
-    </div>    
+        <div id="validation"></div>
+    </div>
+    <script src="./js/login.js"></script>    
 </body>
 </html>
