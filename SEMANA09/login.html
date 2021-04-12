@@ -16,24 +16,23 @@
                 </h1>
             </div>
             <div class="Email">
-                <label for="email"class="Elementslebel">
+                <label for="email" class="Elementslebel">
                     Email
                 </label>
-                <input type="email" id="email" placeholder=" Juan@mail.com" required/>                
+                <input type="email" id="email" placeholder=" Juan@mail.com" required/>
+                <div class="email-msg"></div>                
             </div>
             <div class="Password">
                 <label for="password" id="password" class="Elementslebel">
                     Password
                 </label>
-                <input type="password" id="password" placeholder=" Please use more than 6 characters, number and uppercase"required/>
+                <input type="password" id="password" placeholder=" Please use more than 6 characters, number and uppercase" required/>
+                <div class="password-msg"></div>   
             </div>            
             <div>
-                <button type="submit" id="buttomsing" class="">
+                <button type="submit" id="buttomsing" class="" onclick="validationAll()">
                     Sign In
                 </button>
-                </button>
-                <button type="reset"id="buttonreset" >
-                    Reset
                 </button>
             </div>            
             <div class="newaccount">
@@ -42,6 +41,6 @@
         </form>
         <div id="validation"></div>
     </div>
-    <script src="./js/login.js"></script>    
+    <script src="./java/login.js"></script>    
 </body>
 </html>

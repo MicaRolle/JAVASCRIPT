@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css"> 
     <title>REGISTER</title>
 </head>
 <body>
@@ -18,28 +19,34 @@
                 <label for="name" class="Elementslebel">
                     Name
                 </label>
-                <input type="Name" id="name" required />
+                <input type="text" id="name" required />
             </div>
             <div class="cont_email">
                 <label for="email" class="Elementslebel">
                     Email
                 </label>
-                <input type="Email" id="email" required />
+                <input type="email" id="email" required />
             </div>
             <div class="cont_password">
                 <label for="password" class="Elementslebel">
                     Password
                 </label>
-                <input type="Password" id="password" required />
+                <input type="password" id="password" required />
             </div>
             <div class="cont_password">
-                <label for="Password_two" class="Elementslebel">Repeat password</label>
-                <input type="password_two" id="Password_two" required />
+                <label for="password_two" class="Elementslebel">Repeat password</label>
+                <input type="password" id="Password_two" required />
             </div>
             <button type="submit" class="buttomsub">
                 Sign In
             </button>
+            <button type="reset"id="buttonreset" >
+                Reset
+            </button>
             <div id="dev_mess">
+            </div>
+            <div class="newaccount">
+                <a href="./login.html" id="anchor"> You have an account?</a>
             </div>
         </form>
     </div>
