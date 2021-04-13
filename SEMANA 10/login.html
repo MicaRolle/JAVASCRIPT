@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>** Login **</title>
+</head>
+<body>
+    <div class="form">
+        <form class="loginForm" name="form">
+            <div class="Title">
+                <h1 class="titlelog">
+                    LOGIN
+                </h1>
+            </div>
+            <div class="Email">
+                <label for="email" class="Elementslebel">
+                    Email
+                </label>
+                <input type="email" id="email" placeholder=" Juan@mail.com" required/>
+                <div class="email-msg"></div>                
+            </div>
+            <div class="Password">
+                <label for="password" id="password" class="Elementslebel">
+                    Password
+                </label>
+                <input type="password" id="password" placeholder=" Please use more than 6 characters, number and uppercase" required/>
+                <div class="password-msg"></div>   
+            </div>            
+            <div>
+                <button type="submit" id="buttomsing" class="" onclick="validationAll()">
+                    Sign In
+                </button>
+                </button>
+            </div>            
+            <div class="newaccount">
+                <a href="./register.html" id="anchor"> You don't have any account?</a>
+            </div>
+            <div id="UserInformation"></div>
+        </form>
+        <div id="validation"></div>
+    </div>
+    <script src="./java/login.js"></script>
+    <script src="./java/login-validation.js"></script>     
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css"> 
+    <title>REGISTER</title>
+</head>
+<body>
+    <div class="cont">
+        <form class="r_form" name="form" id="form">
+            <div class="cont_Title">
+                <h1 class="title">
+                    Register
+                </h1>
+            </div>
+            <div class="cont_name">
+                <label for="name" class="Elementslebel">
+                    Name
+                </label>
+                <input type="text" id="name" required />
+                <div class="name-msg"></div>
+            </div>
+            <div class="cont_email">
+                <label for="email" class="Elementslebel">
+                    Email
+                </label>
+                <input type="email" id="email" required />
+                <div class="email-msg"></div>
+            </div>
+            <div class="cont_password">
+                <label for="password" class="Elementslebel">
+                    Password
+                </label>
+                <input type="password" id="password" required />
+                <div class="password-msg"></div>
+            </div>
+            <div class="cont_password">
+                <label for="password_two" class="Elementslebel">Repeat password</label>
+                <input type="password" id="password_two" required />
+                <div class="passwordConf-msg"></div>
+            </div>
+            <button type="submit" class="buttomsub">
+                Sign In
+            </button>
+            <button type="reset"id="buttonreset" >
+                Reset
+            </button>
+            <div id="dev_mess">
+            </div>
+            <div class="newaccount">
+                <a href="./login.html" id="anchor"> You have an account?</a>
+            </div>
+            <div id="userInfo"></div>
+        </form>
+    </div>
+    <script src="./js/register.js"></script> 
+    <script src="./js/register-validation.js"></script>     
+</body>
+</html>
