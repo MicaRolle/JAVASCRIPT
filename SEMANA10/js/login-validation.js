@@ -23,6 +23,7 @@ email.addEventListener("blur", function (){
         emailMsg.innerHTML = "Correct";
     } else {
         emailMsg.style.display = "flex";
+        emailMsg.style.color = "red";
         emailMsg.innerHTML = "The email is incorrect";
     }
 });
@@ -45,8 +46,10 @@ password.addEventListener("blur", function (){
           passwordMsg.style.display = "flex";
           passwordMsg.style.color = "green";
           passwordMsg.innerHTML = "Correct";
+              
       } else {
           passwordMsg.style.display = "flex";
+          passwordMsg.style.color = "red";
           passwordMsg.innerHTML = "Please, 8 letter, 1 Upletter and numbers";
     }
 });

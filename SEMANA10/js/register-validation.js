@@ -22,6 +22,7 @@ nameInput.addEventListener("blur", function (){
         nameMsg.innerHTML = "Correct";
     } else {
         nameMsg.style.display = "flex";
+        nameMsg.style.color = "red";
         nameMsg.innerHTML = "Only letters please";
     }
 });
@@ -45,7 +46,8 @@ email.addEventListener("blur", function (){
         emailMsg.innerHTML = "Correct";
     } else {
         emailMsg.style.display = "flex";
-        emailMsg.innerHTML = "Only letters please";
+        emailMsg.style.color = "red";
+        emailMsg.innerHTML = "Only format to email";
     }
 });
 email.addEventListener("focus", function () {
@@ -68,6 +70,7 @@ password.addEventListener("blur", function (){
         passwordMsg.innerHTML = "Correct";
     } else {
         passwordMsg.style.display = "flex";
+        passwordMsg.style.color = "red";
         passwordMsg.innerHTML = "Please, 8 letter, 1 Upletter and numbers";
     }
 });
@@ -89,6 +92,7 @@ confirmPassword.addEventListener("blur", function (){
         confirmMsg.innerHTML = "Correct";
     } else {
         confirmMsg.style.display = "flex";
+        confirmMsg.style.color = "red";
         confirmMsg.innerHTML = "The password are not coinsidense";
     }
 });
