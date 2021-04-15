@@ -9,51 +9,57 @@
 </head>
 <body>
     <div class="cont">
-        <form class="r_form" name="form" id="form">
+        <form class="form">
             <div class="cont_Title">
                 <h1 class="title">
                     Register
                 </h1>
             </div>
             <div class="cont_name">
-                <label for="name" class="Elementslebel">
+                <label for="name" class="Elementslebel" id ="labelName">
                     Name
                 </label>
                 <input type="text" id="name" required />
-                <div class="name-msg"></div>
+                <div id="name-msg"></div>
             </div>
             <div class="cont_email">
-                <label for="email" class="Elementslebel">
+                <label for="email" class="Elementslebel" id="labelEmail">
                     Email
                 </label>
                 <input type="email" id="email" required />
-                <div class="email-msg"></div>
+                <div id="email-msg"></div>
             </div>
             <div class="cont_password">
-                <label for="password" class="Elementslebel">
+                <label for="password" class="Elementslebel" id="labelPass">
                     Password
                 </label>
                 <input type="password" id="password" required />
-                <div class="password-msg"></div>
+                <div id="password-msg"></div>
             </div>
             <div class="cont_password">
-                <label for="password_two" class="Elementslebel">Repeat password</label>
+                <label for="password_two" class="Elementslebel" id="labelSecPas">
+                    Repeat password
+                </label>
                 <input type="password" id="password_two" required />
-                <div class="passwordConf-msg"></div>
+                <div id="passwordConf-msg"></div>
             </div>
-            <button type="submit" class="buttomsub">
-                Sign In
-            </button>
-            <button type="reset"id="buttonreset" >
-                Reset
-            </button>
-            <div id="dev_mess">
+            <div class="btn-container">
+                <button type="submit" id="btn-sub" onclick="validateAll()">
+                    Sign In
+                </button>
+                <button type="reset" id="btn-reset" >
+                    Reset
+                </button>
             </div>
             <div class="newaccount">
                 <a href="./login.html" id="anchor"> You have an account?</a>
             </div>
-            <div id="userInfo"></div>
         </form>
+    </div>
+    <div id="test-container">
+        <h2>Validations:</h2>
+        <ul id="validations">
+        </ul>
     </div>
     <script src="./js/register.js"></script> 
     <script src="./js/register-validation.js"></script>     

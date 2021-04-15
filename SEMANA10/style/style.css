@@ -1,6 +1,4 @@
-*,
-::before,
-::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,63 +13,62 @@ body {
 }
 form{
     width: 30em;
+    height: auto;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    padding: 40px 0;
+    padding: 0px 30px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-}
-.form{
-    display: flex;
-    justify-content: center;  
-    width: 100%;
-    margin: auto;
+    background: #fff;
 }
 h1{
+    padding: 20px 0px;
     text-align: center;
     font-weight: 700;
 }
-.Email{
-    margin: 20px 20px 10px;
-}
-.Password{
-    margin: 20px 20px 10px;
-}
-form .grupo{
-    position: relative;
-    margin: 45px ;
+label{
+    margin-top: 30px;
+    font-size: 25px;
 }
 input{
-    background: none;
-    color: #c6c6c6;
-    font-size: 18px;
-    padding: 20px 10px 10px 5px;
-    display: block;
     width: 100%;
+    display: flex;
+    margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid violet;
+    background: none;
+    font-size: 18px;
+    color: #c6c6c6;
 }
 input:focus{ 
     outline: none;
     color: #5e5d5d;
 }
-label{
-    color: var(--colorTextos);
-    font-size: 30px;
-    position: relative;
-    left: 5px;
-    top: 10px;
-    transition: 0.5s ease all;
-    pointer-events: none;
+#name-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#email-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#password-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+#passwordConf-msg{
+    display: none;
+    padding-bottom: 20px;
+}
+.btn-container{
+    display: flex;
 }
 button{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: linear-gradient(to right, #B06AB3, #4568DC);
     border: none;
-    display: block;
     width: 70%;
-    margin: 30px auto;
+    margin: 10px;
     color: #fff;
     height: 40px;
     font-size: 20px;  
@@ -87,11 +84,20 @@ button{
     text-align: center;
 }
 a{
-    text-decoration: none;
     text-align: center; 
+    text-decoration: none;
+}
+#test-container{
+    width: 30em;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+h2{
+    padding-top: 20px;
 }
 
-#validation{
-    display: none;
-}
 
