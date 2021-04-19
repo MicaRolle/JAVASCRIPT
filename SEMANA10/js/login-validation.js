@@ -66,6 +66,11 @@ form.addEventListener("submit", function (e) {
         `<li>${email.value}</li>`+
         `<li>${password.value}</li>`;
       e.preventDefault();
+      fetch('http://localhost:4000/login', {
+        method: 'PUT', 
+        body: JSON.stringify({email: `${email.value}`, password: `${password.value}`}),
+        headers: {'Content-type': 'application/json'}
+       });
     } else {
       return false;
     }

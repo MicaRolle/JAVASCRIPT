@@ -108,6 +108,12 @@ form.addEventListener("submit", function (e) {
         `<li>${nameInput.value}</li>`+ `<li>${email.value}</li>`+
         `<li>${password.value}</li>`+ `<li>${confirmPassword.value}</li>`;
       e.preventDefault();
+      fetch('http://localhost:4000/register', {
+          method: 'POST', 
+          body: JSON.stringify({name: `${nameInput.value}`, email: `${email.value}`, password: `${password.value}`,
+          confirpasword: `${confirmPassword.value}`}),
+          headers: {'Content-type': 'application/json'}
+         });
     } else {
       return false;
     }
